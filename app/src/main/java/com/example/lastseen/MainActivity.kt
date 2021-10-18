@@ -19,15 +19,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        status = "${tv.text} \n online"
-        tv.text = status
+        tv.text = "${tv.text} \n online"
     }
 
     override fun onPause() {
         super.onPause()
         val dateFormat = SimpleDateFormat("dd/M/yyyy hh:mm:ss").format(Date())
-        status = "${tv.text} \n Last seen: $dateFormat"
-        tv.text = status
+        tv.text = "${tv.text} \n Last seen: $dateFormat"
+         
     }
 
 }
